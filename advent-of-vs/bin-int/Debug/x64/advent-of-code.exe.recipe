@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\dev\advent-of-code\bin\Debug\x64\advent-of-code.exe</FullPath>
+      <FullPath>D:\dev\advent-of-code\advent-of-vs\bin\Debug\x64\advent-of-code.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

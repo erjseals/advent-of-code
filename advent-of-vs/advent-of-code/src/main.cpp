@@ -48,6 +48,18 @@ int largerThanPrevious()
         return -1;
     }
 
+    // Non-sliding window
+    int count = 0;
+    for (size_t i = 1; i < vecRaw.size(); i++)
+    {
+        if (vecRaw[i] > vecRaw[i - 1])
+        {
+            count++;
+        }
+        std::cout << "prev_elem: " << vecRaw[i - 1] << " elem: " << vecRaw[i] << " count: " << count << std::endl;
+    }
+    return count;
+
     // Now use a sliding window to smooth out numbers
     // Not checking size of file, better be at least 3 lines
 
@@ -69,7 +81,7 @@ int largerThanPrevious()
         index++;
     }
 
-    int count = 0;
+    count = 0;
     for (size_t i = 1; i < vecSlide.size(); i++)
     {
         if (vecSlide[i] > vecSlide[i - 1])
